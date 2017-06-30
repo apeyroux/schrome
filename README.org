@@ -1,0 +1,30 @@
+* Config
+
+In your *~/.ssh/config*
+
+#+BEGIN_SRC sh
+Host schrome
+  HostName my.remote.server
+#+END_SRC
+
+* Build
+
+#+BEGIN_SRC sh
+nix-build
+#+END_SRC
+
+* Test
+
+#+BEGIN_SRC sh
+./result/bin/schrome
+#+END_SRC
+
+* Like it ? install !
+
+#+BEGIN_SRC sh
+nix-env -f . -i
+#+END_SRC
+
+#+BEGIN_SRC sh
+schrome
+#+END_SRC
